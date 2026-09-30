@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — Reven Photo</title>
+<meta name="description" content="Política de privacidad de Reven Photo. La aplicación no recoge datos personales: todo el procesado es local.">
+<style>
+  :root {
+    --tinta: #16181d;
+    --suave: #5c6472;
+    --linea: #e3e6ec;
+    --azul: #3f7bff;
+    --fondo: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --tinta: #e6e8ec;
+      --suave: #9aa3b2;
+      --linea: #2a2e37;
+      --azul: #6b9bff;
+      --fondo: #14161a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 56px 24px 96px;
+    background: var(--fondo);
+    color: var(--tinta);
+    font: 16px/1.65 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  .marca {
+    display: flex; align-items: center; gap: 12px;
+    padding-bottom: 22px; margin-bottom: 34px;
+    border-bottom: 1px solid var(--linea);
+  }
+  .marca svg { width: 34px; height: 34px; color: var(--azul); }
+  .marca span { font-size: 21px; font-weight: 300; }
+  .marca b { font-weight: 600; }
+  h1 { font-size: 27px; font-weight: 600; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .fecha { margin: 0 0 38px; color: var(--suave); font-size: 14px; }
+  h2 {
+    font-size: 17px; font-weight: 600;
+    margin: 36px 0 10px; padding-top: 4px;
+  }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 20px; }
+  li { margin-bottom: 7px; }
+  a { color: var(--azul); }
+  code {
+    padding: 2px 5px; border-radius: 3px;
+    background: rgba(127, 140, 165, 0.14);
+    font-family: ui-monospace, 'Cascadia Code', Consolas, monospace;
+    font-size: 0.88em;
+  }
+  .tabla-scroll { overflow-x: auto; margin: 0 0 16px; }
+  table { border-collapse: collapse; width: 100%; min-width: 460px; font-size: 14.5px; }
+  th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--linea); vertical-align: top; }
+  th { font-weight: 600; }
+  .destacado {
+    margin: 0 0 20px; padding: 14px 18px;
+    border-left: 3px solid var(--azul);
+    background: rgba(63, 123, 255, 0.07);
+    border-radius: 0 4px 4px 0;
+  }
+  footer {
+    margin-top: 52px; padding-top: 20px;
+    border-top: 1px solid var(--linea);
+    color: var(--suave); font-size: 13.5px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="marca">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="8"/>
+      <path d="M12 4l4 6.9M20 12h-8M16 18.9l-4-6.9M8 18.9l4-6.9M4 12h8M8 5.1l4 6.9"/>
+    </svg>
+    <span>Reven <b>Photo</b></span>
+  </div>
+
+  <h1>Política de privacidad</h1>
+  <p class="fecha">Última actualización: 3 de agosto de 2026</p>
+
+  <p class="destacado"><strong>Reven Photo no recoge ningún dato personal.</strong> No hay cuentas de usuario, no hay registro, no hay publicidad y no hay analítica. La aplicación no envía información tuya a ningún servidor: su única conexión es una consulta al arrancar para saber si hay una versión nueva, explicada más abajo.</p>
+
+  <h2>Quién es el responsable</h2>
+  <p>Óscar Ortega, que publica Reven Photo en Microsoft Store bajo el nombre Reven Software.<br>
+  Contacto: <a href="mailto:contacto.agenciareven@gmail.com">contacto.agenciareven@gmail.com</a></p>
+
+  <h2>Tus fotos</h2>
+  <p>Las imágenes que abres, editas y guardas <strong>no salen de tu ordenador</strong> en ningún momento. Todo el procesado —incluido el recorte de fondo con inteligencia artificial— se ejecuta en local: el modelo de IA se instala junto con la aplicación y funciona sin conexión a internet.</p>
+
+  <h2>Comprobación de versión</h2>
+  <p>La versión descargada de Microsoft Store consulta al arrancar un archivo de texto alojado en GitHub que contiene <strong>únicamente el número de la última versión publicada</strong>, para poder avisarte de que existe una actualización. En esa consulta no se envía ningún dato tuyo ni ningún identificador: es la misma petición que haría cualquier navegador al abrir una página, y GitHub registra la dirección IP como en cualquier visita web. Si no hay conexión, la aplicación arranca y funciona igual. La aplicación nunca descarga ni instala nada por su cuenta: si aceptas, solo abre la ficha de Microsoft Store.</p>
+  <p>La versión instalada fuera de Microsoft Store no hace ninguna petición de red.</p>
+
+  <h2>Qué se guarda en tu equipo</h2>
+  <p>La aplicación escribe unos pocos archivos en la carpeta de datos de aplicación de tu usuario (<code>%APPDATA%\Reven Photo</code>):</p>
+  <div class="tabla-scroll">
+    <table>
+      <thead><tr><th>Archivo</th><th>Contenido</th></tr></thead>
+      <tbody>
+        <tr><td><code>preferencias.json</code></td><td>Tus opciones: calidad al guardar, formato, tamaño de miniatura y última carpeta abierta.</td></tr>
+        <tr><td><code>valoraciones.json</code></td><td>Las estrellas que pones a las fotos en el visor.</td></tr>
+        <tr><td><code>marcas.json</code></td><td>Las fotos que marcas en el visor.</td></tr>
+        <tr><td><code>recientes.json</code></td><td>Las rutas de los últimos archivos abiertos.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Estos archivos se quedan en tu ordenador y puedes borrarlos cuando quieras; desinstalar la aplicación también los elimina. Las valoraciones y las marcas se guardan <strong>fuera</strong> de tus fotos, precisamente para no modificar tus archivos.</p>
+
+  <h2>Permisos que pide la aplicación</h2>
+  <ul>
+    <li><strong>Acceso al sistema de archivos:</strong> para abrir y guardar tus imágenes, y para listar las carpetas que visitas en el visor.</li>
+    <li><strong>Captura de pantalla:</strong> solo cuando usas la función Captura, y únicamente para generar la imagen que tú pides.</li>
+    <li><strong>Portapapeles:</strong> al copiar una imagen o una ruta desde el visor.</li>
+  </ul>
+  <p>No se usa ningún otro permiso. La aplicación no accede a la cámara, al micrófono, a los contactos ni a la ubicación.</p>
+
+  <h2>Terceros</h2>
+  <p>Reven Photo no integra servicios de terceros, ni SDK de publicidad, ni herramientas de medición. La distribución a través de Microsoft Store implica que Microsoft recoge sus propios datos de instalación y uso según su política de privacidad, sobre los que esta aplicación no tiene control ni acceso.</p>
+
+  <h2>Menores</h2>
+  <p>La aplicación no está dirigida específicamente a menores y, al no recoger datos personales, no trata información de ninguna edad.</p>
+
+  <h2>Tus derechos</h2>
+  <p>Como no se recogen datos personales, no hay información sobre la que ejercer los derechos de acceso, rectificación, supresión, oposición, limitación o portabilidad. Aun así, puedes escribir a <a href="mailto:contacto.agenciareven@gmail.com">contacto.agenciareven@gmail.com</a> para cualquier duda sobre esta política.</p>
+
+  <h2>Cambios</h2>
+  <p>Si esta política cambia, se publicará la versión nueva en esta misma dirección con su fecha de actualización.</p>
+
+  <footer>Reven Photo — Reven Software</footer>
+</main>
+</body>
+</html>
